@@ -1,0 +1,29 @@
+div#dday{
+    color:#000000;
+    font-size: 50px;
+    font-weight: normal;
+    text-shadow: 0.1em 0.1em 0.05em rgba(3, 15, 129, 0.3);
+}
+
+div#titulo{
+    color:#ff0000;
+    font-size: 30px;
+    font-weight: normal;
+    text-shadow: 0.1em 0.1em 0.05em rgba(3, 15, 129, 0.3);
+}
+
+div#alerta{
+    width: 500px;
+    height: 250px;
+    /*background-image: url(_imagens/cabecalho.png);*/
+    background-image:linear-gradient( rgba(255,255,255,.5) 0%,rgba(255,255,255,.5) 100%), url(_imagens/cabecalho.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+div#alerta{
+    color:#000000;
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: 0.1em 0.1em 0.05em rgba(3, 15, 129, 0.3);
+}

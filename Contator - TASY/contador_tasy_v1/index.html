@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href="estilo.css" />
+</head>
+<body>
+
+    <center><div id="dday"></div></center>
+
+    <center><div id="titulo">
+      ...para virada do sistema!<br /><br />
+    </div></center>
+
+    <center>
+      <div id="alerta">
+        <p><strong>Estamos no processo de criação e validação 
+          dos usuários do sistema TASY, pedimos para aqueles 
+          que já possuem seus usuários efetuem testes dentro 
+          do ambiente de TREINAMENTO.<br />
+
+          Qualquer dificuldade entrar em contato com o setor 
+          de Tecnologia da Informação, RAMAL 9238.</strong></p>
+      </div>
+    </center>
+
+<script>
+// Coloque a data final do contador
+var countDownDate = new Date("August 1, 2020 00:00:00").getTime();
+
+// A contagem regressiva em segundos
+var x = setInterval(function() {
+
+  // Aqui pega a data e hora de hoje
+  var now = new Date().getTime();
+
+  // Calculo entre a hora atual e a hora final
+  var distance = countDownDate - now;
+
+  // O calculo propriamente dito
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Exibe o resultado com o id = Demo
+  document.getElementById("dday").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // O texto que será exibido ao final da contagem 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("dday").innerHTML = "PRAZO ENCERRADO";
+  }
+}, 1000);
+</script>
+    <!-- jQuery (necessario para os plugins Javascript do Bootstrap) -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
